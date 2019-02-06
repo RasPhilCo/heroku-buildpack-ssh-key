@@ -33,4 +33,5 @@ echo "-----> Installed SSH key from BUILDPACK_SSH_KEY"
 # install the ssh key
 ssh-keyscan -H github.com >> ~/.ssh/known_hosts 2> /dev/null
 cat "$ENV_DIR/BUILDPACK_SSH_KEY" > ~/.ssh/id_rsa
+echo >> ~/.ssh/id_rsa
 chmod 600 ~/.ssh/id_rsa
