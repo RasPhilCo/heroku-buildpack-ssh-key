@@ -21,6 +21,7 @@ if [[ -z $BUILDPACK_SSH_KEY ]]; then
 fi
 
 mkdir -p ~/.ssh
+chmod 700 ~/.ssh
 
 # ignore/hide ssh warnings
 echo "Host *" >> ~/.ssh/config
